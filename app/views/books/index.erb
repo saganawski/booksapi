@@ -1,0 +1,8 @@
+<h1>Top Books of all time and space!</h1>
+
+<% @books.each do |book| %>
+  <p class="rank">Rank:<%= book.rank %></p>
+  <p class="title"><%= book.title %></p>
+  <p class="author">Author:<%= book.author %></p>
+
+<% end %>
