@@ -18,6 +18,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'pry'
+gem '2.2.6'
 
 group :test do
   gem 'faker'
