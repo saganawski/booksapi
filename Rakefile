@@ -135,6 +135,9 @@ task "console" do
 end
 
 desc "Run the specs"
-RSpec::Core::RakeTask.new(:spec)
+begin
+  RSpec::Core::RakeTask.new(:spec)
+  rescue LoadError
+end
 
 task :default  => :specs
